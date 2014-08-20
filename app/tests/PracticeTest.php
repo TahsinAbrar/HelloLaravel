@@ -8,10 +8,11 @@
 
 class PracticeTest extends PHPUnit_Framework_TestCase{
     public function testHelloWorld(){
+        //assertTrue
         $greeting = "Hello, World.";
         $this->assertTrue($greeting=='Hello, World.',$greeting);
         
-        //$greeting = "Hello, World.";
+        //assertFalse
         $this->assertFalse($greeting=='Hello',$greeting);
 
         //assertEquals accepts three arguments
@@ -21,12 +22,19 @@ class PracticeTest extends PHPUnit_Framework_TestCase{
      * If you wish to prove that two values are equal to one another,
      * then, clearly, assertEquals is a better choice than assertTrue,
      * even though both will work.*/
-
+        //assertNotEquals
         $this->assertNotEquals('Hello, VM World.',$greeting);
         
         //Another exercise of assertEquals
         $sum=2+2;
         $this->assertEquals('4',$sum);
-        
+
+        //assertSame
+        $val=null;
+        $this->assertEquals(0,$val);
+        //In situations, when you require strict comparison (or effectively ===), reach for assertSame
+        //$this->assertSame(0,$val);//return false
+        $val=0;
+        $this->assertSame(0,$val);
     }
 } 
