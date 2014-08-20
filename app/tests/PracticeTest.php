@@ -13,6 +13,16 @@ class PracticeTest extends PHPUnit_Framework_TestCase{
         
         //$greeting = "Hello, World.";
         $this->assertFalse($greeting=='Hello',$greeting);
+
+        //assertEquals accepts three arguments
+        //$this->assertEquals(EXPECTED, ACTUAL, OPTIONAL MESSAGE);
+        $this->assertEquals('Hello, World.',$greeting);
+    /*
+     * If you wish to prove that two values are equal to one another,
+     * then, clearly, assertEquals is a better choice than assertTrue,
+     * even though both will work.*/
+
+        $this->assertNotEquals('Hello, VM World.',$greeting);
         
     }
 } 
