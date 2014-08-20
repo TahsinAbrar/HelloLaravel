@@ -5,6 +5,24 @@
  * Date: 8/20/14
  * Time: 10:19 AM
  */
+use Way\Tests\Assert;
+use Way\Tests\Should;
+ini_set("date.timezone","UTC");
+
+class DateFormatter {
+    protected $stamp;
+
+    public function __construct(DateTime $stamp)
+    {
+        $this->stamp = $stamp;
+    }
+
+    public function getStamp()
+    {
+        return $this->stamp;
+    }
+}
+
 
 class PracticeTest extends PHPUnit_Framework_TestCase{
     public function testHelloWorld(){
@@ -26,7 +44,7 @@ class PracticeTest extends PHPUnit_Framework_TestCase{
         $this->assertNotEquals('Hello, VM World.',$greeting);
         
         //Another exercise of assertEquals
-        $sum=2+2;
+        $sum = 2+2;
         $this->assertEquals('4',$sum);
 
         //assertSame
@@ -58,4 +76,19 @@ class PracticeTest extends PHPUnit_Framework_TestCase{
         $age = 25;
         $this->assertInternalType('integer', $age); // true
     }
+
+    //assertInstanceof
+    //$this->assertInstanceOf(EXPECTED, ACTUAL, MESSAGE);
+    public function testStampMustBeInstanceOfDateTime()
+     {
+         $date = new DateFormatter(new DateTime);
+         $this->assertInstanceOf('DateTime', $date->getStamp()); // true
+     }
+    public function testItWorks()
+     {
+         $name = 'Joe';
+
+         Should::equal('Joe', $name);
+         Assert::equals('Joe', $name);
+     }
 } 
