@@ -40,7 +40,17 @@ class PracticeTest extends PHPUnit_Framework_TestCase{
     public function testKhorerGadaIncludesShui()
     {
         //assertContains
-     $khorerGada = ['Taylor', 'Shui', 'Dayle'];
-     $this->assertContains('Shui', $khorerGada);
+         $khorerGada = ['Taylor', 'Shui', 'Dayle'];
+         $this->assertContains('Shui', $khorerGada);
+         $this->assertNotContains('Troll', $khorerGada); // true
+    }
+    public function testFamilyRequiresParent(){
+        /*assertArrayHaskey*/
+        $family = [
+            'parents' => 'Joe',
+            'children' => ['Timmy', 'Suzy']
+        ];
+        //$this->assertContains('parents', $family); // Failed asserting that an arra
+        $this->assertArrayHasKey('parents', $family); // true
     }
 } 
