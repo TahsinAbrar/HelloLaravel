@@ -24,5 +24,9 @@ class PracticeTest extends PHPUnit_Framework_TestCase{
 
         $this->assertNotEquals('Hello, VM World.',$greeting);
         
+        //Another exercise of assertEquals
+        $sum=2+2;
+        $this->assertEquals('4',$sum);
+        
     }
 } 
