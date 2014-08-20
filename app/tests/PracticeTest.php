@@ -37,4 +37,10 @@ class PracticeTest extends PHPUnit_Framework_TestCase{
         $val=0;
         $this->assertSame(0,$val);
     }
+    public function testKhorerGadaIncludesShui()
+    {
+        //assertContains
+     $khorerGada = ['Taylor', 'Shui', 'Dayle'];
+     $this->assertContains('Shui', $khorerGada);
+    }
 } 
