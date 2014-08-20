@@ -9,5 +9,6 @@
 class WelcomeControllerTest extends TestCase {
     public function testLoadingWelcomeSayHello(){
         $this->call('get','welcome/sayhello');
+        $this->assertResponseOk();
     }
 } 
