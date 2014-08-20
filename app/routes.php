@@ -25,3 +25,5 @@ Route::get('/', 'HelloController@showWelcome');
 //Route::get('/',function(){
 //    return "Hello Buddy!";
 //});
+
+Route::get('welcome/sayhello','WelcomeController@sayhello');
