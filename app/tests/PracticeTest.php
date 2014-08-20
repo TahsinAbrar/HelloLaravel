@@ -52,5 +52,10 @@ class PracticeTest extends PHPUnit_Framework_TestCase{
         ];
         //$this->assertContains('parents', $family); // Failed asserting that an arra
         $this->assertArrayHasKey('parents', $family); // true
+        $this->assertInternalType('array', $family['children']); // false
+
+        //another Exercise of assertInternalType
+        $age = 25;
+        $this->assertInternalType('integer', $age); // true
     }
 } 
