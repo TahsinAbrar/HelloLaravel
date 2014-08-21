@@ -27,3 +27,4 @@ Route::get('/', 'HelloController@showWelcome');
 //});
 
 Route::get('welcome/sayhello','WelcomeController@sayhello');
+Route::get('student/sayhi','StudentController@sayhi');
