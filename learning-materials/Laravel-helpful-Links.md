@@ -48,3 +48,9 @@ Link: http://clivern.com/how-to-create-file-upload-with-laravel/
 Link: http://culttt.com/2013/08/19/creating-forms-in-laravel-4/
 
 *[Date: 25.08.2014]*
+
+9. Creating a Basic ToDo Application With Laravel 4
+
+Link: http://www.flynsarmy.com/2013/12/creating-a-basic-todo-application-with-laravel-4-part-1/
+
+*[Date: 24.08.2014]*
