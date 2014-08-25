@@ -42,3 +42,9 @@ Route::resource('projects', 'ProjectsController');
 Link: http://clivern.com/how-to-create-file-upload-with-laravel/
 
 *[Date:25.08.2014]*
+
+8. Creating forms in Laravel 4
+
+Link: http://culttt.com/2013/08/19/creating-forms-in-laravel-4/
+
+*[Date: 25.08.2014]*
